@@ -1,0 +1,12 @@
+C2
+Rows:6
+Colums:8
+C3
+Rows:8
+Colums:8
+A1
+Rows:9
+Colums:9
+A2
+Rows:12
+Colums:12
