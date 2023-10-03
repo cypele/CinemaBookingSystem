@@ -1,23 +1,29 @@
 # CinemaBookingSystem
-1. Opis projektu
+# 1. Opis projektu
 Cinema Booking System udostępnia możliwość symulowania składania zamówień na bilet na określony
 film w odpowiedniej dacie. Umożliwia również ustalanie odpowiednich terminów i filmów w panelu
 administratora.
-2. Project description
+
+# 2. Project description
 Cinema Booking System is a project that provides possibilities such as making track for movies in
 specified room and time, adding new movies and saving that data. User can also order ticket for specified
 movie, date, time and chosen seat.
-3. Instrukcja użytkownika
+
+# 3. Instrukcja użytkownika
 Aby korzystać z projektu jako administrator należy na początku wpisać słowo „admin”, jeżeli napiszemy
 cokolwiek innego będziemy korzystać z niego jako użytkownik, który może złożyć zamówienie.
-4. Kompilacja
+
+# 4. Kompilacja
 Wystarczy zwykła kompilacja.
-5. Pliki źródłowe
+
+# 5. Pliki źródłowe
 Projekt składa się z następujących plików źródłowych:
 ⚫ Cinema Booking System.cpp – jest to cały program.
-6. Zależności
+
+# 6. Zależności
 ⚫ brak
-7. Opis klas
+
+# 7. Opis klas
 W tym punkcie należy umieścić opis wszystkich stworzonych w projekcie klas. Należy podać do czego
 służy dana klasa oraz informację o jej publicznych metodach. Opcjonalnie można załączyć fragmenty kodu
 źródłowego. Na przykład:
