@@ -1,68 +1,60 @@
-# CinemaBookingSystem
-# 1. Opis projektu
-Cinema Booking System udostępnia możliwość symulowania składania zamówień na bilet na określony
-film w odpowiedniej dacie. Umożliwia również ustalanie odpowiednich terminów i filmów w panelu
-administratora.
+# Cinema Booking System
+## Project Description
+The Cinema Booking System provides the ability to simulate ordering tickets for a specific movie on a specified date. It also allows administrators to set up appropriate schedules and movies.
 
-# 2. Project description
-Cinema Booking System is a project that provides possibilities such as making track for movies in
-specified room and time, adding new movies and saving that data. User can also order ticket for specified
-movie, date, time and chosen seat.
+## User Instructions
+To use the project as an administrator, you must first enter the word "admin". If you enter anything else, you will be using it as a user who can place orders.
 
-# 3. Instrukcja użytkownika
-Aby korzystać z projektu jako administrator należy na początku wpisać słowo „admin”, jeżeli napiszemy
-cokolwiek innego będziemy korzystać z niego jako użytkownik, który może złożyć zamówienie.
+## Compilation
+Simple compilation is sufficient.
 
-# 4. Kompilacja
-Wystarczy zwykła kompilacja.
+## Source Files
+The project consists of the following source files:
+- Cinema Booking System.cpp – this is the entire program.
 
-# 5. Pliki źródłowe
-Projekt składa się z następujących plików źródłowych:
-⚫ Cinema Booking System.cpp – jest to cały program.
+## Dependencies
+- None
 
-# 6. Zależności
-⚫ brak
+## Description of Classes
+In this section, a description of all classes created in the project should be included. Provide what the class is for and information about its public methods. Optionally, code snippets can be included. For example:
+The following classes were created in the project:
+- Movie – represents a movie by providing its name, genre, and duration.
+  - `string get_movie_name()` returns the movie's name.
+  - `string get_genre()` returns the genre(s) of the movie.
+  - `int get_duration() const` returns the duration of the movie.
+- Room – represents a room in the cinema hall.
+  - `string get_room_name()` returns the room's name.
+  - `int get_capacity()` returns the capacity of the room.
+  - `int get_row()` returns the number of rows in the room.
+  - `int get_column()` returns the number of vertical rows in the room.
+- Track – represents which movie is playing in which room at what time.
+  - `Movie get_movie()` returns an object of the Movie class.
+  - `Room get_room()` returns the room where the screening will take place.
+  - `string get_day()` returns the day of the screening.
+  - `string get_start_time()` returns the start time of the screening.
+- User – represents a user.
+  - `string get_user_name()` returns the user's name.
+  - `string get_email()` returns the user's email.
+  - `string get_password()` returns the user's password.
+- Seat – represents a seat in the room.
+  - `int get_seat()` returns the seat number.
+  - `bool get_avaliable()` returns the availability of the seat.
+- Order – represents an order placed by a user.
+  - `User GetUser()` returns an object of the User class who placed the order.
+  - `Track GetTrack()` returns the track for which the ticket was purchased.
+  - `vector<Seat>` returns a vector of ordered seats.
 
-# 7. Opis klas
-W tym punkcie należy umieścić opis wszystkich stworzonych w projekcie klas. Należy podać do czego
-służy dana klasa oraz informację o jej publicznych metodach. Opcjonalnie można załączyć fragmenty kodu
-źródłowego. Na przykład:
-W projekcie utworzono następujące klasy:
-⚫ Movie – reprezentuje film podając jego nazwę, gatunek oraz czas trwania.
-◼ string get_movie_name() zwraca nazwę filmu.
-◼ string get_genre() zwraca gatunek/gatunki filmu.
-◼ int get_duration() const zwraca czas trwania filmu.
-⚫ Room-reprezentuje pomieszczenie w Sali kinowej
-◼ string get_room_name() zwraca nazwę pomieszczenia
-◼ int get_capacity() zwraca pojemność pomieszczenia
-◼ int get_row() zwraca liczbę rzędów w pomieszczeniu
-◼ int get_column() zwraca liczbę pionowych rzędów w pomieszczeniu
-⚫ Track-reprezentuje w której Sali o której i kiedy leci dany film
-◼ Movie get_movie() zwraca obiekt klasy movie
-3
-◼ Room get_room() zwraca pomieszczenie w którym odbywać się będzie seans
-◼ string get_day() zwraca dzień seansu
-◼ string get_start_time() zwraca godzine rozpoczęcia seansu
-⚫ User – reprezentuje użytkownika
-◼ string get_user_name() zwraca imię uzytkownika
-◼ string get_email() zwraca email uzytkownika
-◼ string get_password() zwraca hasło użytkownika
-⚫ Seat- reprezentuje miejsce siedzące w Sali
-◼ Int get_seat() zwraca numer miejsca
-◼ Bool get_avaliable() zwraca dostepnosc miejsca
-⚫ Order- reprezentuje zamówienie składane przez użytkownika
-◼ User GetUser() zwraca obiekt klasy user który zamowil produkt
-◼ Track GetTrack() Zwraca na jaki seans został zakupiony bilet
-◼ Vector<Seat> Zwraca wektor zamówionych miejsc
-8. Zasoby
-⚫ Plik wykorzystuje pliki txt jako miejsca zapisu:
-⚫ Users.txt
-⚫ Tracks.txt
-⚫ Movies.txt
-⚫ Rooms.txt
-⚫ Orders.txt
-9. Dalszy rozwój i ulepszenia
-Można wprowadzić system logowania z zabezpieczeniem haseł. Możliwość dodawania filmów przez
-administratora za pomocą konsoli.
-10. Inne
-brak
+## Resources
+- The program uses .txt files for storage:
+  - Users.txt
+  - Tracks.txt
+  - Movies.txt
+  - Rooms.txt
+  - Orders.txt
+
+## Further Development and Enhancements
+- Implement a login system with password protection.
+- Allow administrators to add movies via the console.
+
+## Other
+- None
